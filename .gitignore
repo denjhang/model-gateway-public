@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+config.json
+providers.json
+usage.jsonl
+history.jsonl
+fallbacks.jsonl
+gateway.log
+monitor-gui-cfg.json
+_gui_stderr.log
+dist/
