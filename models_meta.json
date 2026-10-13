@@ -1,0 +1,805 @@
+{
+  "aliases": {
+    "mistralai/mistral-small-2603": "mistralai/mistral-small-4-119b-2603",
+    "mistralai/mistral-large-2512": "mistralai/mistral-large-3-675b-instruct-2512",
+    "MiniMax/MiniMax-M3": "minimaxai/minimax-m3",
+    "ZhipuAI/GLM-5.2": "glm-5.2",
+    "ZhipuAI/GLM-5.1": "glm-5.1"
+  },
+  "context_limits": {
+    "mistralai/mistral-small-2603": 262144,
+    "mistralai/mistral-small-4-119b-2603": 262144,
+    "mistralai/mistral-large-2512": 262144,
+    "mistralai/mistral-large-3-675b-instruct-2512": 262144,
+    "mistralai/mistral-medium-3.5-128b": 262144,
+    "nvidia/nemotron-3-super-120b-a12b": 262144,
+    "nvidia/nemotron-3-ultra-550b-a55b": 262144,
+    "openai/gpt-oss-120b": 131072,
+    "moonshotai/kimi-k2.6": 262144,
+    "sensenova-6.7-flash-lite": 131072,
+    "deepseek-ai/deepseek-v4-flash": 1048576,
+    "deepseek-ai/deepseek-v4-pro": 1048576,
+    "deepseek-v4-flash": 1048576,
+    "qwen/qwen3.5-122b-a10b": 262144,
+    "minimaxai/minimax-m3": 1048576,
+    "minimaxai/minimax-m2.7": 204800,
+    "glm-5.2": 1048576,
+    "glm-5.1": 131072,
+    "sensenova-u1-fast": 32768,
+    "gemini-3.5-flash": 1048576,
+    "Qwen/Qwen3.5-122B-A10B": 262144,
+    "Qwen/Qwen3.5-397B-A17B": 262144,
+    "z-ai/glm-5.2": 1048579,
+    "deepseek-ai/DeepSeek-V4-Pro": 1048576,
+    "claude-opus-5": 200000,
+    "claude-opus-4-8": 200000,
+    "claude-opus-4-7": 200000,
+    "claude-opus-4-6": 200000,
+    "claude-sonnet-5": 200000,
+    "claude-sonnet-4-6": 200000,
+    "claude-haiku-4-5": 200000,
+    "claude-haiku-4-5-20251001": 200000,
+    "gpt-6-astra": 1050000,
+    "gpt-5.6": 400000,
+    "gpt-5.5": 400000,
+    "deepseek-v4-pro": 1000000,
+    "deepseek-flash": 1000000,
+    "deepseek-v4.1-flash": 1000000,
+    "DeepSeek-v4-pro": 1000000,
+    "DeepSeek v4 Flash": 1000000,
+    "GLM-5.3": 1000000,
+    "GLM-5.2": 1000000,
+    "MiniMax-M3": 1000000,
+    "MiniMax-M2.7": 200000,
+    "MiniMax-M2.5": 200000,
+    "z-ai/glm-4.6": 200000,
+    "deepseek/deepseek-chat-v3.1": 163840,
+    "qwen/qwen3-235b-a22b": 131072,
+    "agnes-3.0-flash": 262144,
+    "deepseekV4-Pro": 1000000,
+    "deepseekV4-Flash": 1000000,
+    "minimax-m3": 1000000,
+    "minimax-m3-thinking": 1000000,
+    "ernie-5.1": 1000000,
+    "xiaobai5": 128000,
+    "qwen3.7-plus": 1000000,
+    "qwen3-coder-plus": 1000000,
+    "qwen3-max": 1000000,
+    "agnes-2.5-flash": 262144,
+    "sensenova-6.8-flash-lite": 262144,
+    "deepseek-ai/DeepSeek-V4-Flash": 1000000,
+    "deepseek-ai/DeepSeek-V4.1-Flash": 1000000,
+    "Qwen/Qwen3.5-27B": 262144,
+    "Qwen/Qwen3.5-35B-A3B": 262144,
+    "deepseek-v3": 131072,
+    "deepseek-r1": 131072,
+    "deepseek-v3-search": 131072,
+    "fast_thinking": 32768,
+    "allai-chat": 32768,
+    "gpt-5.6-sol": 390000,
+    "gpt-5.6-luna": 390000,
+    "gpt-5.6-terra": 390000,
+    "gpt-5.4": 400000,
+    "gpt-5.4-mini": 400000,
+    "codex-auto-review": 400000,
+    "grok-4.6": 256000,
+    "grok-4.5": 256000,
+    "grok-build-0.1": 256000,
+    "MiniMax-M2.7-highspeed": 200000,
+    "glm-4.7-flash": 131072,
+    "glm-5.3-flashx": 131072,
+    "kimi-k3": 1048576,
+    "hy4-preview": 262144,
+    "deepseek-r1-search": 131072,
+    "smartmode": 131072,
+    "ima-hy4-preview": 262144,
+    "ima-glm-5.3-flash": 131072,
+    "ima-hy3": 131072,
+    "lingxi-agent": 131072,
+    "ima-deepseek-v4-flash": 1048576,
+    "kimi-k2": 262144,
+    "moonshotai/kimi-k2": 262144,
+    "mistralai/mistral-large": 131072,
+    "mistral-large": 131072,
+    "meta-llama/llama-4-maverick": 1048576,
+    "llama-4-maverick": 1048576,
+    "Qwen/Qwen3.8-27B": 256000,
+    "Qwen/Qwen3.8-Flash-Next": 256000,
+    "ZhipuAI/GLM-5.2": 128000,
+    "MiniMax/MiniMax-M3": 1000000,
+    "stepfun-ai/Step-3.7-Flash": 128000,
+    "qwen3.8-27b-simpo": 262144,
+    "opencode/nemotron-3-ultra-free": 262144,
+    "glm-5": 202752,
+    "kimi-k2.5": 262144,
+    "jiuTian": 131072,
+    "deepseek": 1000000
+  },
+  "non_chat_keywords": [
+    "embed",
+    "asr",
+    "tts",
+    "safety",
+    "guard",
+    "reward",
+    "detect",
+    "moderat",
+    "classify",
+    "rerank",
+    "search",
+    "image",
+    "audio",
+    "safeguard",
+    "oss-safeguard",
+    "content-safety",
+    "vl-embedding",
+    "text-embedding",
+    "gemini-embedding",
+    "lyria",
+    "clip-preview",
+    "owl-alpha",
+    "relace",
+    "ui-tars",
+    "bodybuilder",
+    "pareto",
+    "fusion",
+    "auto",
+    "weaver",
+    "router",
+    "switchpoint",
+    "bge-",
+    "starcoder",
+    "codegemma",
+    "gemma-2b",
+    "gemma-2-2b",
+    "recurrentgemma",
+    "deplot",
+    "fuyu",
+    "kosmos",
+    "neva",
+    "vila",
+    "nvclip",
+    "gliner",
+    "nemoretriever",
+    "nemotron-parse",
+    "riva-translate",
+    "ising-calibration",
+    "cosmos-reason",
+    "nemotron-mini-4b",
+    "nemotron-nano-3-",
+    "chatqa",
+    "minitron"
+  ],
+  "model_descriptions": {
+    "sensenova-6.7-flash-lite": {
+      "ctx": 131072,
+      "desc": "商汤轻量多模态，图文通用，原生支持 128K 上下文"
+    },
+    "deepseek-ai/deepseek-v4-flash": {
+      "ctx": 1048576,
+      "desc": "DeepSeek V4 高性价比 MoE，原生百万上下文，支持长代码库一次性输入"
+    },
+    "deepseek-v4-flash": {
+      "ctx": 1048576,
+      "desc": "DeepSeek V4 高性价比 MoE，原生百万上下文，支持长代码库一次性输入"
+    },
+    "deepseek-ai/deepseek-v4-pro": {
+      "ctx": 1048576,
+      "desc": "DeepSeek V4 旗舰模型，最高支持 1M 超大上下文"
+    },
+    "qwen/qwen3.5-122b-a10b": {
+      "ctx": 262144,
+      "desc": "通义千问 122B 模型，支持高达 256K 上下文长度"
+    },
+    "minimaxai/minimax-m3": {
+      "ctx": 1048576,
+      "desc": "MiniMax-M3 旗舰大模型，支持原生 1M 超长上下文输入"
+    },
+    "minimaxai/minimax-m2.7": {
+      "ctx": 204800,
+      "desc": "MiniMax-M2.7 模型，支持 200K 上下文长度"
+    },
+    "mistralai/mistral-medium-3.5-128b": {
+      "ctx": 262144,
+      "desc": "Mistral Medium 128B，具备 256K 原生上下文支持"
+    },
+    "mistralai/mistral-small-4-119b-2603": {
+      "ctx": 262144,
+      "desc": "Mistral 中型 MoE，兼顾推理 / 代码，多模态图文支持"
+    },
+    "mistralai/mistral-small-2603": {
+      "ctx": 262144,
+      "desc": "Mistral 中型 MoE，兼顾推理 / 代码，多模态图文支持"
+    },
+    "glm-5.1": {
+      "ctx": 131072,
+      "desc": "智谱 GLM-5.1 模型，支持 128K 上下文"
+    },
+    "glm-5.2": {
+      "ctx": 1048576,
+      "desc": "智谱旗舰推理模型，纯文本 / 代码，原生百万上下文，最大输出 128K token"
+    },
+    "mistralai/mistral-large-3-675b-instruct-2512": {
+      "ctx": 262144,
+      "desc": "Mistral 旗舰 675B MoE，全能力均衡多模态模型"
+    },
+    "mistralai/mistral-large-2512": {
+      "ctx": 262144,
+      "desc": "Mistral 旗舰 675B MoE，全能力均衡多模态模型"
+    },
+    "moonshotai/kimi-k2.6": {
+      "ctx": 262144,
+      "desc": "月之暗面万亿参数 MoE，Agent / 工程代码专精，原生支持长流程工具调用"
+    },
+    "nvidia/nemotron-3-super-120b-a12b": {
+      "ctx": 262144,
+      "desc": "NVIDIA 高效 120B MoE，英伟达在线 API 实际可用约 256K 上下文"
+    },
+    "nvidia/nemotron-3-super-120b-a12b:free": {
+      "ctx": 262144,
+      "desc": "NVIDIA 高效 120B MoE，英伟达在线 API 实际可用约 256K 上下文"
+    },
+    "openai/gpt-oss-120b": {
+      "ctx": 131072,
+      "desc": "OpenAI 开源 120B (117B MoE)，原生 131K 上下文"
+    },
+    "nvidia/nemotron-3-ultra-550b-a55b": {
+      "ctx": 262144,
+      "desc": "NVIDIA 旗舰 550B MoE，英伟达在线 API 实际可用约 256K 上下文"
+    },
+    "nvidia/nemotron-3-ultra-550b-a55b:free": {
+      "ctx": 262144,
+      "desc": "NVIDIA 旗舰 550B MoE，英伟达在线 API 实际可用约 256K 上下文"
+    },
+    "sensenova-u1-fast": {
+      "ctx": 32768,
+      "desc": "商汤旗舰多模态，针对图文混合场景优化，原生 32K 上下文"
+    },
+    "gemini-3.5-flash": {
+      "ctx": 1048576,
+      "desc": "Gemini 3.5 Flash 最新版，原生百万上下文支持"
+    }
+  },
+  "model_specs": {
+    "gpt-6-astra": {
+      "total": 10000,
+      "active": 550,
+      "note": "第三方推测,OpenAI未公开",
+      "vision": true
+    },
+    "kimi-k3": {
+      "total": 2800,
+      "active": 64,
+      "vision": true,
+      "note": "月之暗面K3旗舰: 2.8T参数原生多模态Agent模型, 1M上下文(官方目录); 激活参数未公开按K系推测"
+    },
+    "deepseek-v4-pro": {
+      "total": 1600,
+      "active": 49,
+      "vision": true
+    },
+    "DeepSeek-v4-pro": {
+      "total": 1600,
+      "active": 49,
+      "vision": true
+    },
+    "deepseekV4-Pro": {
+      "total": 1600,
+      "active": 49,
+      "vision": true
+    },
+    "qwen3-235b-a22b": {
+      "total": 235,
+      "active": 22
+    },
+    "qwen/qwen3-235b-a22b": {
+      "total": 235,
+      "active": 22
+    },
+    "z-ai/glm-4.6": {
+      "total": 355,
+      "active": 32
+    },
+    "glm-4.6": {
+      "total": 355,
+      "active": 32
+    },
+    "MiniMax-M3": {
+      "total": 428,
+      "active": 23,
+      "vision": true,
+      "note": "原生多模态(图+视频输入), 官方OmniDocBench超Gemini3.1; 注意leehaha拼车网关只吃URL图, base64会被CF掐线"
+    },
+    "minimax-m3": {
+      "total": 428,
+      "active": 23,
+      "vision": true
+    },
+    "GLM-5.3": {
+      "total": 744,
+      "active": 40,
+      "note": "标准版744B-A40B(用户确认); Flash版才是320B-A18B"
+    },
+    "DeepSeek v4 Flash": {
+      "total": 284,
+      "active": 13,
+      "vision": true
+    },
+    "deepseek-flash": {
+      "total": 552,
+      "active": 8,
+      "vision": true,
+      "note": "DeepSeek V4.1 Flash(560565/日日新站的deepseek-flash即此): 多模态理解, 按v4.1-flash规格"
+    },
+    "deepseekV4-Flash": {
+      "total": 284,
+      "active": 13,
+      "vision": true
+    },
+    "deepseek-v4.1-flash": {
+      "total": 552,
+      "active": 8,
+      "vision": true
+    },
+    "deepseek/deepseek-chat-v3.1": {
+      "total": 685,
+      "active": 37
+    },
+    "deepseek-chat-v3.1": {
+      "total": 685,
+      "active": 37
+    },
+    "Qwen/Qwen3.5-27B": {
+      "total": 27,
+      "active": 27,
+      "note": "dense",
+      "vision": true
+    },
+    "Qwen/Qwen3.5-35B-A3B": {
+      "total": 35,
+      "active": 3,
+      "vision": true
+    },
+    "qwen3.7-plus": {
+      "total": 35,
+      "active": 35,
+      "note": "媒体报道,dense"
+    },
+    "GLM-5.2": {
+      "total": 744,
+      "active": 40
+    },
+    "claude-opus-5": {
+      "total": 2000,
+      "active": 150,
+      "note": "社区推测:一线活跃50-150B/总1-2T,取上限",
+      "vision": true
+    },
+    "claude-sonnet-5": {
+      "total": 1000,
+      "active": 100,
+      "note": "马斯克爆料Sonnet~1T,推测",
+      "vision": true
+    },
+    "gpt-5.6": {
+      "total": 3000,
+      "active": 150,
+      "note": "36kr推测3T/150B激活",
+      "vision": true
+    },
+    "gpt-5.5": {
+      "total": 3000,
+      "active": 150,
+      "note": "与5.6同基座,推测",
+      "vision": true
+    },
+    "claude-opus-4-8": {
+      "total": 2000,
+      "active": 150,
+      "note": "社区推测,同代际",
+      "vision": true
+    },
+    "claude-opus-4-7": {
+      "total": 2000,
+      "active": 150,
+      "note": "社区推测,同代际",
+      "vision": true
+    },
+    "claude-opus-4-6": {
+      "total": 2000,
+      "active": 150,
+      "note": "社区推测,同代际",
+      "vision": true
+    },
+    "claude-sonnet-4-6": {
+      "total": 1000,
+      "active": 100,
+      "note": "推测,同代际",
+      "vision": true
+    },
+    "claude-haiku-4-5": {
+      "total": 400,
+      "active": 40,
+      "note": "推测:轻量档",
+      "vision": true
+    },
+    "claude-haiku-4-5-20251001": {
+      "total": 400,
+      "active": 40,
+      "note": "推测:轻量档",
+      "vision": true
+    },
+    "ernie-5.1": {
+      "total": 1000,
+      "active": 80,
+      "note": "推测"
+    },
+    "sensenova-6.8-flash-lite": {
+      "vision": true,
+      "note": "日日新轻量多模态智能体(官方描述); 转写质量差已剔除出组"
+    },
+    "agnes-3.0-flash": {
+      "total": 320,
+      "active": 18,
+      "note": "推测:flash档"
+    },
+    "deepseek-v4-flash": {
+      "total": 284,
+      "active": 13,
+      "note": "DS官方V4 Flash",
+      "vision": true
+    },
+    "deepseek-r1": {
+      "total": 671,
+      "active": 37,
+      "note": "DS-R1官方"
+    },
+    "deepseek-v3": {
+      "total": 671,
+      "active": 37,
+      "note": "DS-V3官方"
+    },
+    "deepseek-v3-search": {
+      "total": 671,
+      "active": 37,
+      "note": "DS-V3官方搜索版"
+    },
+    "xiaobai5": {
+      "total": 355,
+      "active": 32,
+      "note": "推测:自研中档"
+    },
+    "xiaobai5-pro": {
+      "total": 744,
+      "active": 40,
+      "note": "推测:自研高档"
+    },
+    "deepseekV3.2": {
+      "total": 671,
+      "active": 37,
+      "note": "DS官方V3.2"
+    },
+    "smartmode": {
+      "total": 1000,
+      "active": 80,
+      "note": "推测:文心旗舰路由"
+    },
+    "allai-chat": {
+      "total": 320,
+      "active": 18,
+      "note": "推测:中档"
+    },
+    "fast_thinking": {
+      "total": 200,
+      "active": 20,
+      "note": "推测:快思考档"
+    },
+    "lingxi-agent": {
+      "total": 744,
+      "active": 40,
+      "note": "推测:金山系旗舰档"
+    },
+    "ima-deepseek-v4-flash": {
+      "total": 284,
+      "active": 13,
+      "note": "ima路由DS-V4-Flash",
+      "vision": true
+    },
+    "ima-hy4-preview": {
+      "total": 500,
+      "active": 50,
+      "note": "推测:混元4档"
+    },
+    "ima-hy3": {
+      "total": 300,
+      "active": 30,
+      "note": "推测:混元3档"
+    },
+    "ima-glm-5.3-flash": {
+      "total": 320,
+      "active": 18,
+      "note": "ima路由GLM-5.3-Flash"
+    },
+    "qwen/qwen3.6-35b-a3b": {
+      "total": 35,
+      "active": 3,
+      "note": "本地Qwen3.6"
+    },
+    "minimax-m3-thinking": {
+      "total": 428,
+      "active": 23,
+      "note": "同M3基座+扩展推理链(thinking变体)",
+      "vision": true
+    },
+    "gpt-5.6-sol": {
+      "total_params_b": 3000,
+      "active_params_b": 150,
+      "note": "5.6变体(sun/sol系)，规格类比gpt-5.6推测",
+      "vision": true
+    },
+    "gpt-5.6-luna": {
+      "total_params_b": 3000,
+      "active_params_b": 150,
+      "note": "5.6变体，规格类比gpt-5.6推测",
+      "vision": true
+    },
+    "gpt-5.6-terra": {
+      "total_params_b": 3000,
+      "active_params_b": 150,
+      "note": "5.6变体，规格类比gpt-5.6推测",
+      "vision": true
+    },
+    "gpt-5.4": {
+      "total_params_b": 2000,
+      "active_params_b": 100,
+      "note": "上一代5.4，社区推测",
+      "vision": true
+    },
+    "gpt-5.4-mini": {
+      "total_params_b": 2000,
+      "active_params_b": 60,
+      "note": "5.4迷你版，推测",
+      "vision": true
+    },
+    "codex-auto-review": {
+      "total_params_b": 3000,
+      "active_params_b": 150,
+      "note": "代码审查特化，GPT-5系底座推测"
+    },
+    "grok-4.6": {
+      "total_params_b": 2500,
+      "active_params_b": 150,
+      "note": "xAI新旗舰，社区推测"
+    },
+    "grok-4.5": {
+      "total_params_b": 2400,
+      "active_params_b": 130,
+      "note": "社区推测"
+    },
+    "grok-build-0.1": {
+      "total_params_b": 500,
+      "active_params_b": 50,
+      "note": "代码构建特化小模型，推测"
+    },
+    "MiniMax-M2.7": {
+      "total_params_b": 2300,
+      "active_params_b": 100,
+      "note": "M2.7 社区推测(M2系230B级)"
+    },
+    "MiniMax-M2.7-highspeed": {
+      "total_params_b": 2300,
+      "active_params_b": 100,
+      "note": "M2.7 高速版，规格类比推测"
+    },
+    "deepseek-ai/DeepSeek-V4-Pro": {
+      "total_params_b": 1600,
+      "active_params_b": 49,
+      "note": "与 deepseek-v4-pro 同底座(6kd/硅基命名带前缀)",
+      "vision": true
+    },
+    "deepseek-ai/DeepSeek-V4-Flash": {
+      "total_params_b": 284,
+      "active_params_b": 13,
+      "note": "与 deepseek-v4-flash 同底座(6kd/硅基命名带前缀)",
+      "vision": true
+    },
+    "deepseek-ai/DeepSeek-V4.1-Flash": {
+      "total_params_b": 552,
+      "active_params_b": 8,
+      "note": "与 deepseek-v4.1-flash 同底座(6kd/硅基命名带前缀)",
+      "vision": true
+    },
+    "glm-4.7-flash": {
+      "total": 300,
+      "active": 30,
+      "note": "智谱flash档,家族推测"
+    },
+    "glm-5.3-flashx": {
+      "total": 400,
+      "active": 40,
+      "note": "GLM-5.3 flashx提速档,推测"
+    },
+    "hy4-preview": {
+      "total": 400,
+      "active": 52,
+      "note": "混元4预览,腾讯官方未公开,推测"
+    },
+    "agnes-2.5-flash": {
+      "total": 200,
+      "active": 20,
+      "note": "agnes自研flash,推测"
+    },
+    "MiniMax-M2.5": {
+      "total": 2000,
+      "active": 90,
+      "note": "M2.5,类比M2.7推测"
+    },
+    "deepseek-r1-search": {
+      "total": 671,
+      "active": 37,
+      "note": "DS-R1官方搜索版"
+    },
+    "moonshotai/kimi-k2": {
+      "total": 1000,
+      "active": 32,
+      "note": "Kimi K2官方",
+      "vision": true
+    },
+    "kimi-k2": {
+      "total": 1000,
+      "active": 32,
+      "note": "Kimi K2官方",
+      "vision": true
+    },
+    "mistralai/mistral-large": {
+      "total": 123,
+      "active": 17,
+      "note": "Mistral-Large-2官方"
+    },
+    "meta-llama/llama-4-maverick": {
+      "total": 400,
+      "active": 17,
+      "note": "Llama-4-Maverick官方"
+    },
+    "qwen3-coder-plus": {
+      "total": 480,
+      "active": 35,
+      "note": "qwen3-coder-plus,推测"
+    },
+    "qwen3-max": {
+      "total": 1000,
+      "active": 50,
+      "note": "qwen3-max,推测"
+    },
+    "glm-5.3-flash": {
+      "total": 744,
+      "active": 40,
+      "note": "GLM-5.3 flash档,类比推测"
+    },
+    "Qwen/Qwen3.5-397B-A17B": {
+      "total_params_b": 397,
+      "active_params_b": 17,
+      "note": "Qwen3.5旗舰 397B MoE",
+      "vision": true
+    },
+    "Qwen/Qwen3.5-122B-A10B": {
+      "total_params_b": 122,
+      "active_params_b": 10,
+      "note": "Qwen3.5 中杯 MoE",
+      "vision": true
+    },
+    "Qwen/Qwen3.8-27B": {
+      "total_params_b": 27,
+      "active_params_b": 27,
+      "note": "Qwen3.8 27B,推测"
+    },
+    "Qwen/Qwen3.8-Flash-Next": {
+      "total_params_b": 100,
+      "active_params_b": 10,
+      "note": "Qwen3.8 Flash次世代,推测"
+    },
+    "ZhipuAI/GLM-5.2": {
+      "total_params_b": 600,
+      "active_params_b": 30,
+      "note": "GLM-5.2,类比GLM-5.3推测"
+    },
+    "MiniMax/MiniMax-M3": {
+      "total_params_b": 428,
+      "active_params_b": 23,
+      "note": "MiniMax M3官方",
+      "vision": true
+    },
+    "stepfun-ai/Step-3.7-Flash": {
+      "total_params_b": 300,
+      "active_params_b": 30,
+      "note": "Step-3.7 Flash,推测"
+    },
+    "qwen3.8-27b-simpo": {
+      "total_params_b": 27,
+      "active_params_b": 27,
+      "note": "Qwen3.8-27B-EfficientThink-SimPO 微调版(本地Q3量化), 密集27B"
+    },
+    "opencode/nemotron-3-ultra-free": {
+      "total": 550,
+      "active": 55,
+      "note": "对应nvidia nemotron-3-ultra-550b-a55b",
+      "vision": false
+    },
+    "glm-5": {
+      "total": 744,
+      "active": 40,
+      "note": "智谱GLM-5, MoE 744B/40B, 技术报告+社区"
+    },
+    "kimi-k2.5": {
+      "total": 1000,
+      "active": 32,
+      "note": "月之暗面K2.5, 1T/32B, ctx 128K→256K, 多模态",
+      "vision": true
+    },
+    "jiuTian": {
+      "total": 744,
+      "active": 40,
+      "note": "中国移动九天(灵犀助手), ctx 128K, 参数未公开按同级推测"
+    },
+    "deepseek": {
+      "total": 1600,
+      "active": 49,
+      "note": "DeepSeek最新版(V4系), 站方裸名别名, 按v4-pro规格记",
+      "vision": true
+    },
+    "MiniMax-M3.1-Flash-Preview": {
+      "total": 428,
+      "active": 23,
+      "vision": true,
+      "note": "M3.1系Flash Preview, 规格类比M3推测(MiniMax官方未公示); 原生多模态; 价格=M3同价(包月内)",
+      "context_length": 1000000
+    }
+  },
+  "daily_quota_est": {
+    "6kd": 24728033,
+    "openhub": 10360000,
+    "_note": "日额度估算总量(tokens), 每日真实用量超出时自动上调(自学习)"
+  },
+  "vision_models": [
+    "DeepSeek v4 Flash",
+    "DeepSeek-v4-pro",
+    "MiniMax-M3",
+    "Qwen/Qwen3.5-122B-A10B",
+    "Qwen/Qwen3.5-27B",
+    "Qwen/Qwen3.5-35B-A3B",
+    "Qwen/Qwen3.5-397B-A17B",
+    "claude-haiku-4-5",
+    "claude-haiku-4-5-20251001",
+    "claude-opus-4-6",
+    "claude-opus-4-7",
+    "claude-opus-4-8",
+    "claude-opus-5",
+    "claude-sonnet-4-6",
+    "claude-sonnet-5",
+    "deepseek",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "deepseek-ai/DeepSeek-V4-Pro",
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "deepseek-flash",
+    "deepseek-v4-flash",
+    "deepseek-v4-pro",
+    "deepseek-v4.1-flash",
+    "deepseekV4-Flash",
+    "deepseekV4-Pro",
+    "gpt-5.4",
+    "gpt-5.4-mini",
+    "gpt-5.5",
+    "gpt-5.6",
+    "gpt-5.6-luna",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-6-astra",
+    "ima-deepseek-v4-flash",
+    "kimi-k2",
+    "kimi-k2.5",
+    "kimi-k3",
+    "moonshotai/kimi-k2",
+    "sensenova-6.8-flash-lite",
+    "MiniMax-M3.1-Flash-Preview"
+  ]
+}
